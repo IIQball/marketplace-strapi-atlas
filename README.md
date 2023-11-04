@@ -1,2 +1,3 @@
-# marketplace-strapi-atlas
-desain marketplace database dengan strapi dan mongoDB atlas
+# Strapi application
+
+A quick description of your strapi application
