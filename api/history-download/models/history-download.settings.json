@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "history_downloads",
+  "info": {
+    "name": "history_download"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "member": {
+      "model": "member",
+      "via": "history_downloads"
+    },
+    "konten": {
+      "model": "konten",
+      "via": "history_downloads"
+    },
+    "tanggal": {
+      "type": "date"
+    }
+  }
+}

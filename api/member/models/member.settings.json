@@ -13,13 +13,22 @@
   "pluginOptions": {},
   "attributes": {
     "username": {
-      "type": "string"
+      "type": "string",
+      "unique": true
     },
     "email": {
       "type": "email"
     },
-    "lokasi": {
-      "type": "string"
+    "password": {
+      "type": "password"
+    },
+    "kontens": {
+      "via": "member",
+      "collection": "konten"
+    },
+    "history_downloads": {
+      "via": "member",
+      "collection": "history-download"
     }
   }
 }

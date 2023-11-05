@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/history-downloads",
+      "handler": "history-download.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/history-downloads/count",
+      "handler": "history-download.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/history-downloads/:id",
+      "handler": "history-download.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/history-downloads",
+      "handler": "history-download.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/history-downloads/:id",
+      "handler": "history-download.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/history-downloads/:id",
+      "handler": "history-download.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kontens",
+  "info": {
+    "name": "konten"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judul": {
+      "type": "string"
+    },
+    "url_gambar": {
+      "type": "string"
+    },
+    "deskripsi": {
+      "type": "richtext"
+    },
+    "member": {
+      "model": "member",
+      "via": "kontens"
+    },
+    "history_downloads": {
+      "via": "konten",
+      "collection": "history-download"
+    }
+  }
+}
